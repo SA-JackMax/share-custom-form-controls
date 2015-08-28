@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xsi:schemaLocation="http://www.alfresco.org/model/dictionary/1.0 modelSchema.xsd" -->
+<model name="sample:samplemodel"
+       xmlns="http://www.alfresco.org/model/dictionary/1.0"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <description>Sample Model</description>
+    <author>Rui Fernandes</author>
+    <published>2015-08-27</published>
+    <version>1.0</version>
+
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+    </imports>
+
+    <namespaces>
+        <namespace uri="http://www.alfresco.org/model/sample/1.0" prefix="sample"/>
+    </namespaces>
+    
+    <aspects>
+        <aspect name="sample:sampleAspect">
+            <title>Sample Aspect</title>
+            <properties>
+                <property name="sample:sampleUrl">
+                    <title>Sample URL</title>
+                    <type>d:text</type>
+                </property>
+                <property name="sample:sampleEmail">
+                    <title>Sample Email</title>
+                    <type>d:text</type>
+                </property>
+                <property name="sample:sampleMultiple">
+                    <title>Sample Multiple Property</title>
+                    <type>d:text</type>
+                    <multiple>true</multiple>
+                    <constraints>
+                         <constraint type="LIST">
+                            <parameter name="allowedValues">
+                                <list>
+                                    <value>Value 1</value>
+                                    <value>Value 2</value>
+                                    <value>Value 3</value>
+                                    <value>Value 4</value>
+                                    <value>Value 5</value>
+                                </list>
+                            </parameter>
+                         </constraint>
+                      </constraints>
+                </property>
+                <property name="sample:department">
+                    <title>Department</title>
+                    <type>d:text</type>
+                    <constraints>
+                         <constraint type="LIST">
+                            <parameter name="allowedValues">
+                                <list>
+                                    <value>1 - Department 1</value>
+                                    <value>2 - Department 2</value>
+                                    <value>3 - Department 3</value>
+                                </list>
+                            </parameter>
+                         </constraint>
+                      </constraints>
+                </property>
+                <property name="sample:team">
+                    <title>Team</title>
+                    <type>d:text</type>
+                    <constraints>
+                         <constraint type="LIST">
+                            <parameter name="allowedValues">
+                                <list>
+                                    <value>1 - Team A</value>
+                                    <value>1 - Team B</value>
+                                    <value>2 - Team C</value>
+                                    <value>3 - Team D</value>
+                                    <value>3 - Team E</value>
+                                    <value>3 - Team F</value>
+                                </list>
+                            </parameter>
+                         </constraint>
+                      </constraints>
+                </property>
+            </properties>
+        </aspect>
+    </aspects>
+</model>
