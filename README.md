@@ -32,5 +32,6 @@ Two examples are included:
 The following are not included as part of this extension and are registered for reference only.
 
 * [uploader-plus](https://github.com/softwareloop/uploader-plus)
+* [multivalueFormControl](https://github.com/donaanacounty/multivalueFormControl)
 * [alfresco-datatable-property](https://github.com/msvoren/alfresco-datatable-property)
 * [tabbed-form](https://github.com/rjmfernandes/tabbed-form)
